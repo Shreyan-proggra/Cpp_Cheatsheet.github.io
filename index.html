@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="prism.js"></script>
+    <link rel="stylesheet" href="prism.css">
+    <title>C++ cheatsheet</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        h1{
+            font-family: 'Poppins', sans-serif;
+        }
+        h2{
+            font-family: 'Poppins', sans-serif;
+        }
+        .toolbar-item>button{
+            color: white !important;
+            border: 1px solid white !important;
+            padding: 4px !important;
+            cursor: pointer !important;
+            border: black;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <h2 style="text-align: center;" id="demo"></h2>
+    <h1 style="text-align: center;">Here is the cheatsheet for C++</h1>
+     <h2>C++ boilerplate</h2>
+    <pre class="language-Cpp">
+<code>
+#include&lt;iostream>
+using namespace std;
+int main(){
+    cout<<"Here will be your code";
+    return 0;
+}</code>
+    </pre>
+    <h2>New line character</h2>
+<pre class="language-Cpp"><code>\n</code>
+</pre>
+<h2>Tab character</h2>
+<pre class="language-Cpp">
+    <code>
+\t
+    </code>
+</pre>
+<h2>Backspace character</h2>
+<pre class="language-Cpp">
+    <code>
+\a
+    </code>
+</pre>
+<h1>Comments</h1>
+<h2>Single line Comments</h2>
+
+<pre class="language-Cpp">
+    <code>
+// This is a single line comment    
+    </code>
+</pre>
+<h2>Multiline Comment</h2>
+<pre class="language-Cpp">
+    <code>
+/*
+    I am a Multiline comment
+*/
+    </code>
+</pre>
+<h1>Variables</h1>
+<h2>int</h2>
+<pre class="language-Cpp">
+    <code>
+int variable_name = value;
+    </code>
+</pre>
+<h2>float</h2>
+<pre class="language-Cpp">
+    <code>
+float variable_name = value_in_decimal_form;
+    </code>
+</pre>
+<h2>Double</h2>
+<pre class="language-Cpp">
+    <code>
+double variable_name = value_in_decimal_form; 
+    </code>
+</pre>
+
+<h2>String</h2>
+<pre class="language-cpp">
+    <code>
+string variable_name = "the data is stored here";
+    </code>
+</pre>
+<h2>Boolean</h2>
+<pre class="language-cpp">
+    <code>
+bool variable_name = data in "true" or "false";
+    </code>
+</pre>
+<h2>Arrays in C++</h2>
+<pre class="language-cpp">
+    <code>
+data_type variable_name[number of data you want to store] = {"Data1","Data2", etc...}
+// example int name[3] = {"Shreyan", "Moulik", "Jaba", "Sushen"}
+    </code>
+</pre>
+
+<h1>Functions</h1>
+<h2>Function basic syntax</h2>
+<pre class="language-cpp">
+    <code>
+void function_name(){
+    // code goes here
+}
+    </code>
+</pre>
+
+<h2>The example of functions</h2>
+<pre class="language-cpp">
+    <code>
+#include&lt;iostream&gt;
+using namespace std;
+
+int add(int a, int b){
+    cout << a+b;
+    return 0;
+}
+int main() {
+    int a = 45;
+    int b = 45;
+    add(a,b);
+    return 0;
+}
+
+// The program upper add two variables named a and b
+    </code>
+</pre>
+
+<h1>Switch Case statement</h1>
+<h2>Switch case syntax</h2>
+<pre class="language-cpp">
+    <code>
+#include&lt;iostream&gt;
+using namespace std;
+    
+int main() {
+    switch (expression)
+    {
+        case /* constant-expression */:
+            /* code */
+            break;
+        
+        default:
+            break;
+    }
+    return 0;
+}
+    </code>
+</pre>
+
+<h2>Make a simple calculator in C++</h2>
+<pre class="language-cpp">
+    <code>
+#include&lt;iostream>
+using namespace std;
+
+int main() {
+    int a, b;
+    char op;
+    cout<<"Enter the value you want to calculate"<< endl;
+    cin>>a>>op>>b;
+    switch (op)
+    {
+    case '+':
+        cout<< a+b;
+        break;
+    case '-':
+        cout<< a-b;
+        break;
+    case '*':
+        cout<< a*b;
+        break;
+    case '/':
+        cout<< a/b;
+        break;
+    
+    default:
+        break;
+    }
+    return 0;
+}
+    </code>
+</pre>
+
+<h2>Break and Continue Sentence</h2>
+<h3>Break</h3>
+<pre class="language-cpp">
+<code>break;</code>
+</pre>
+<h3>Continue</h3>
+<pre class="language-cpp">
+    <code>
+continue;
+    </code>
+</pre>
+
+</body>
+<script>
+    var a = window.prompt("Enter your name")
+    document.getElementById("demo").innerHTML = "Welcome "+a;
+</script>
+</html>
+
